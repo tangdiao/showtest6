@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href='font.css' rel='stylesheet' type='text/css'>
+    <script src="fancycharts.js"></script>
+
+    <style>
+        svg {
+            background-color: white;
+            font-family: 'Lato';
+        }
+
+        text.title {
+            text-anchor: middle;
+            font-size: 20px;
+        }
+
+        .legend text {
+            font-size: 12px;
+        }
+
+        path {
+            fill-opacity: .8;
+        }
+
+        circle {
+            fill: grey;
+            opacity: .7;
+        }
+
+        .comp1 {
+            fill: rgb(0, 200, 200);
+        }
+
+        .comp2 {
+            fill: rgb(200, 0, 200);
+        }
+
+        .compBoth {
+            fill: #ac8cdc;
+        }
+
+        path.comp1, path.comp2 {
+            opacity: .5;
+        }
+
+        rect {
+            opacity: .8;
+            cursor: pointer;
+        }
+
+        rect.comp1 {
+            stroke: rgb(0, 200, 200);
+        }
+
+        rect.comp2 {
+            stroke: rgb(200, 0, 200);
+        }
+
+        rect:not(.selected) {
+            fill: white;
+        }
+
+        .types {
+            font-size: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+    </style>
+    <style>
+        body {
+            font-family: Sans-serif;
+            font-size: 11px;
+            background: #E5E2E0;
+        }
+
+        .slice {
+            cursor: pointer;
+        }
+
+        .slice .main-arc {
+            stroke: #E5E2E0;
+            stroke-width: 1px;
+        }
+
+        .slice .hidden-arc {
+            fill: none;
+        }
+
+        .slice text {
+            pointer-events: none;
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }
+    </style>
+</head>
+<body>
+<!--<svg width="960" height="500"></svg>-->
+<script src="d3.v4.min.js"></script>
+<script src="d3-legend.min.js"></script>
+<script src="indextest.js"></script>
+</body>
+</html>
